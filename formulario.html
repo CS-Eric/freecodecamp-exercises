@@ -1,12 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Formulario</title>
+    <title id="title">Formulario</title>
 </head>
 <body>
     <h1>Formulario</h1>
-    <p>
-        Contenido
+    <p id="description">
+        Este es un ejemplo de diseño de un formulario.
     </p>
+    <form id="survey-form">
+        <label for="username" id="name-label">Nombre</label>
+        <input type="text" id="name" name="username" placeholder="Juan López Hérnandez" required>
+        <label for="useremail" id="email-label">Correo electrónico</label>
+        <input type="email" id="email" name="useremail" placeholder="nombre@mail.com" required> 
+        <label for="usernumber" id="number-label">Número</label>
+        <input type="number" name="usernumber" id="number" min="0" max="9" placeholder="0 - 9">
+        <label for="usercountry">País o Región</label>
+        <select name="usercountry" id="dropdown">
+            <option value="MX">México</option>
+            <option value="EU">Estados Unidos</option>
+            <option value="LAT">Latinoamérica</option>  
+        </select>
+        <input type="radio" name="usersex" id="sexmale" value="Hombre">
+        <label for="sexmale">Hombre</label>
+        <input type="radio" name="usersex" id="sexfemale" value="Mujer">
+        <label for="sexfemale">Mujer</label>
+        <fieldset >
+            <legend>Estudios</legend>
+            <input type="checkbox" name="userschoolgrade1" id="grade1" value="Primaria">
+            <label for="userschoolgrade1">Primaria</label>
+            <input type="checkbox" name="userschoolgrade2" id="grade2" value="Secundaria">
+            <label for="userschoolgrade2">Secundaria</label>
+            <input type="checkbox" name="userschoolgrade3" id="grade3" value="Preparatoria">
+            <label for="userschoolgrade3">Preparatoria</label>
+        </fieldset>
+    </form>
 </body>
 </html>
